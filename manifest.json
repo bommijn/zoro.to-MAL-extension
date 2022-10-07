@@ -1,0 +1,24 @@
+{
+    "author": "Bommijn",
+    "name": "Zoro.to MAL extension",
+    "version": "0.1",
+    "description": "Adds extra features to the zoro.to website help with MAL integration",
+    "manifest_version": 2,
+    "icons":
+        {
+            "48": "assets/icons/ico-48.png",
+            "96": "assets/icons/ico-96.png"
+        },
+    
+    "content_scripts": [
+            {
+              "matches": ["*://*.zoro.to/*"],
+              "js": ["assets/js/main.js"]
+            }
+          ],
+
+    "permissions": [
+        "activeTab"
+      ]
+
+}
